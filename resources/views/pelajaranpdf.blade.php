@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+#judul{
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+  <h2 id="judul">Data Pelajaran</h2>
+<h4 id="judul">Ponpes Nurul ummah</h4>
+<table id="customers">
+  <tr>
+    <th>No</th>
+    <th>Kode Pelajaran</th>
+    <th>Nama Pelajaran</th>
+  </tr>
+  @php
+    $no=1;    
+  @endphp
+  @foreach ($data as $item)      
+  <tr>
+    <td>{{ $no++ }}</td>
+    <td>{{ $item->kodepelajaran}}</td>
+    <td>{{ $item->namapelajaran}}</td>
+  </tr>
+  @endforeach
+  
+</table>
+
+</body>
+</html>
+
+
