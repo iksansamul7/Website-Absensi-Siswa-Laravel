@@ -52,7 +52,7 @@
                           <p>{{ $item->hari }}/{{ $item->waktu }}</p>
                           <p>{{$item->kelas->namakelas}}</p>
                       </div>
-                      <div class="col-auto ">
+                      <div class="col-auto" style="margin-left: 5vw">
                           <p><strong>- Jam ke :</strong></p>
                           <p><strong>- Pertemuan ke :</strong></p>
                           <p><strong>- Jenis Kelas :</strong></p>
