@@ -41,19 +41,23 @@
               <div class="card-body">
                   <div class="row ">
                       <div class="col-auto">
-                          <p><strong>Kode Mata Pelajaran</strong></p>
-                          <p><strong>Mata Pelajaran</strong></p>
-                          <p><strong>Hari/Jam</strong></p>
-                          <p><strong>Kelas</strong></p>
-                          <p><strong>Jam ke</strong></p>
-                          <p><strong>pertemuan ke</strong></p>
-                          <p><strong>Jenis Kelas</strong></p>
+                          <p><strong>- Kode Mata Pelajaran :</strong></p>
+                          <p><strong>- Mata Pelajaran :</strong></p>
+                          <p><strong>- Hari/Jam :</strong></p>
+                          <p><strong>- Kelas :</strong></p>
                       </div>
                       <div class="col-auto">
                           <p>{{$item->pelajaran->kodepelajaran}}</p>
                           <p>{{$item->pelajaran->namapelajaran}}</p>
                           <p>{{ $item->hari }}/{{ $item->waktu }}</p>
                           <p>{{$item->kelas->namakelas}}</p>
+                      </div>
+                      <div class="col-auto ">
+                          <p><strong>- Jam ke :</strong></p>
+                          <p><strong>- Pertemuan ke :</strong></p>
+                          <p><strong>- Jenis Kelas :</strong></p>
+                      </div>
+                      <div class="col-auto">
                           <p>{{ $item->jamke }}</p>
                           <p>{{ $pertemuanke }}</p>
                           <p>{{ $item->tipekelas }}</p>
